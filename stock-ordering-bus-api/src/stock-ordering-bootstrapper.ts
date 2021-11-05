@@ -8,6 +8,6 @@ async function bootstrap() {
   var port = ConfigService.create().getPort();
   console.log(port);
   await app.listen(port)
- 
+
 }
 bootstrap();

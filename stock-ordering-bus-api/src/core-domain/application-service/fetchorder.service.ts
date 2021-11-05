@@ -10,13 +10,8 @@ export default class FetchOrderService implements IBaseService<number, OrderMode
         console.log('FetchOrderService created')
     }
 
-    
-
-
     async handle(): Promise<OrderModel[]> {
-       
-     const responseObject =   await  this.httpclient.get('all');
-
-        return  responseObject;
+        const responseObject = await this.httpclient.get('all');
+        return responseObject;
     }
 }
